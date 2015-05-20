@@ -9,16 +9,11 @@
 import UIKit
 import MediaPlayer
 
-class ViewController: UIViewController {
+class ViewController: UICollectionViewController {
     
     var timerHandler = TimerHandler()
     
-    @IBOutlet var firstWebViewer: UIImageView!
-    @IBOutlet var secondWebViewer: UIImageView!
-    @IBOutlet var thirdWebViewer: UIImageView!
-    
     var streamArray: [Stream]!
-    var streamViewerArray: [UIImageView]!
     var firstStream = Stream()
     var secondStream = Stream()
     var thirdStream = Stream()
@@ -28,25 +23,16 @@ class ViewController: UIViewController {
         return Int(UIInterfaceOrientationMask.Portrait.rawValue)
     }
     
-    override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
-        return UIInterfaceOrientation.Portrait
-    }
-    
-    override func shouldAutorotate() -> Bool {
-        return false
-    }
-    
     override func viewDidLoad() {
         
         var tapRecogniser = UITapGestureRecognizer(target: self, action: "runSegue")
-        firstWebViewer.addGestureRecognizer(tapRecogniser)
+//        firstWebViewer.addGestureRecognizer(tapRecogniser)
         
         firstStream.streamPath = "http://213.221.150.136/mjpg/video.mjpg"
         secondStream.streamPath = "http://plazacam.studentaffairs.duke.edu/mjpg/video.mjpg"
         thirdStream.streamPath = "http://trackfield.webcam.oregonstate.edu/mjpg/video.mjpg"
         
         streamArray = [firstStream, secondStream, thirdStream]
-        streamViewerArray = [firstWebViewer, secondWebViewer, thirdWebViewer]
     
         for stream in streamArray {
             stream.getVideoStream()
@@ -62,15 +48,33 @@ class ViewController: UIViewController {
         }
     }
     
+    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return streamArray.count
+    }
+    
+    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let streamCell = collectionView.dequeueReusableCellWithReuseIdentifier("streamViewerCell", forIndexPath: indexPath) as! StreamViewerCell
+        
+        var currentStream: Stream = streamArray[indexPath.item]
+        var currentImage = currentStream.streamImageViewer.image
+        
+        streamCell.streamImageView.image = currentImage
+        
+        return streamCell
+    }
+    
+    
     func runSegue () {
         performSegueWithIdentifier("loadFullScreen", sender: self)
     }
     
     
     func updateImage () {
-        for (index, stream) in enumerate(streamArray) {
-            streamViewerArray[index].image = stream.streamImageViewer.image
-        }
+        self.collectionView?.reloadData()
     }
     
     func connectionStateCheck () {

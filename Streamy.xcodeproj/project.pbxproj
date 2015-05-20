@@ -16,6 +16,7 @@
 		FC84292C1B0A139800A24668 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC84292B1B0A139800A24668 /* Images.xcassets */; };
 		FC84293B1B0A139800A24668 /* VideoPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC84293A1B0A139800A24668 /* VideoPlayerTests.swift */; };
 		FCD5E7661B0CD4AE005FDA15 /* ImageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD5E7651B0CD4AE005FDA15 /* ImageHandler.swift */; };
+		FCD5E7681B0CDBFD005FDA15 /* StreamViewerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD5E7671B0CDBFD005FDA15 /* StreamViewerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		FC8429391B0A139800A24668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC84293A1B0A139800A24668 /* VideoPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerTests.swift; sourceTree = "<group>"; };
 		FCD5E7651B0CD4AE005FDA15 /* ImageHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHandler.swift; sourceTree = "<group>"; };
+		FCD5E7671B0CDBFD005FDA15 /* StreamViewerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamViewerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				FC8429241B0A139800A24668 /* AppDelegate.swift */,
 				FC2745FB1B0CC22C005D9501 /* FullScreenViewController.swift */,
 				FC8429261B0A139800A24668 /* ViewController.swift */,
+				FCD5E7671B0CDBFD005FDA15 /* StreamViewerCell.swift */,
 				FC8429281B0A139800A24668 /* Main.storyboard */,
 				FC84292B1B0A139800A24668 /* Images.xcassets */,
 				FC8429221B0A139800A24668 /* Supporting Files */,
@@ -231,6 +234,7 @@
 				FC2745FC1B0CC22C005D9501 /* FullScreenViewController.swift in Sources */,
 				FC2745FA1B0CBD84005D9501 /* TimerHandler.swift in Sources */,
 				FC8429271B0A139800A24668 /* ViewController.swift in Sources */,
+				FCD5E7681B0CDBFD005FDA15 /* StreamViewerCell.swift in Sources */,
 				FC8429251B0A139800A24668 /* AppDelegate.swift in Sources */,
 				FCD5E7661B0CD4AE005FDA15 /* ImageHandler.swift in Sources */,
 				FC18EFD91B0B96C300C3AD5A /* StreamHandler.swift in Sources */,

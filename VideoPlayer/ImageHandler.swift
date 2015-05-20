@@ -7,7 +7,14 @@
 //
 
 import Foundation
+import UIKit
 
 class ImageHandler {
+    
+    func updateStreamViews (viewsToUpdate: [UIImageView], streamsToUse: [Stream]) {
+        for (index, stream) in enumerate(streamsToUse) {
+            viewsToUpdate[index].image = stream.streamImageViewer.image
+        }
+    }
     
 }
