@@ -13,6 +13,7 @@ class ViewController: UICollectionViewController {
     
     var timerHandler = TimerHandler()
     
+    var selectedStream: Int!
     var streamArray: [Stream]!
     var firstStream = Stream()
     var secondStream = Stream()
@@ -20,6 +21,7 @@ class ViewController: UICollectionViewController {
     var fourthStream = Stream()
     var fifthStream = Stream()
     
+//    var tapRecogniser: UITapGestureRecognizer!
     
     override func supportedInterfaceOrientations() -> Int {
         return Int(UIInterfaceOrientationMask.Portrait.rawValue)
@@ -27,9 +29,7 @@ class ViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         
-        var tapRecogniser = UITapGestureRecognizer(target: self, action: "runSegue")
 //        firstWebViewer.addGestureRecognizer(tapRecogniser)
-        
         
         
         firstStream.streamPath = "http://213.221.150.136/mjpg/video.mjpg"
@@ -60,7 +60,8 @@ class ViewController: UICollectionViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "loadFullScreen" {
             var fullScreenViewController = segue.destinationViewController as! FullScreenViewController
-            fullScreenViewController.receivedStream = firstStream
+            let streamToSend = streamArray[selectedStream]
+            fullScreenViewController.receivedStream = streamToSend
         }
     }
     
@@ -73,6 +74,11 @@ class ViewController: UICollectionViewController {
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let streamCell = collectionView.dequeueReusableCellWithReuseIdentifier("streamViewerCell", forIndexPath: indexPath) as! StreamViewerCell
         
+        
+//        var tapRecogniser = UITapGestureRecognizer(target: self, action: "runSegue")
+//        streamCell.addGestureRecognizer(tapRecogniser)
+        
+
         streamCell.streamImageView.image = streamArray[indexPath.item].streamImageViewer.image
         streamCell.streamNameLabel.text = streamArray[indexPath.item].streamName
         
@@ -80,10 +86,10 @@ class ViewController: UICollectionViewController {
     }
     
     
-    func runSegue () {
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        selectedStream = indexPath.item
         performSegueWithIdentifier("loadFullScreen", sender: self)
     }
-    
     
     func connectionStateCheck () {
         for stream in streamArray {

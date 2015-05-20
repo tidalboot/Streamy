@@ -5,104 +5,6 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Demo Webcams-->
-        <scene sceneID="ml2-jQ-wLW">
-            <objects>
-                <viewController id="aIt-l1-0TO" customClass="ViewController" customModule="Streamy" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Yfo-UO-n2p"/>
-                        <viewControllerLayoutGuide type="bottom" id="A2u-dt-gLr"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="GeQ-6X-Dw6">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="csP-Mz-Hhu">
-                                <rect key="frame" x="40" y="72" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="IFh-uQ-kzo"/>
-                                    <constraint firstAttribute="width" constant="240" id="LdT-Uq-ZJg"/>
-                                </constraints>
-                            </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pmQ-Yc-ajE">
-                                <rect key="frame" x="40" y="220" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="uM3-dN-CGY"/>
-                                    <constraint firstAttribute="width" constant="240" id="xpv-Ls-IlE"/>
-                                </constraints>
-                            </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rfi-7i-kqP">
-                                <rect key="frame" x="40" y="368" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="hqo-aS-a4l"/>
-                                    <constraint firstAttribute="height" constant="128" id="kxE-Xz-FYW"/>
-                                </constraints>
-                            </imageView>
-                            <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Duke College" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksY-pe-LyN">
-                                <rect key="frame" x="40" y="321" width="240" height="27"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="Veb-sY-sj3"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.39386307570000001" green="0.68613795229999996" blue="0.75241570719999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Oregon State College" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exa-3b-Hng">
-                                <rect key="frame" x="40" y="469" width="240" height="27"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="ejh-NI-YDY"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.39386307570000001" green="0.68613795229999996" blue="0.75241570719999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Switzerland" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ric-Gs-MMP">
-                                <rect key="frame" x="40" y="173" width="240" height="27"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="ViQ-nw-BGs"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="0.39386307565789475" green="0.68613795230263153" blue="0.75241570723684215" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="csP-Mz-Hhu" firstAttribute="width" secondItem="Ric-Gs-MMP" secondAttribute="width" id="3Eg-Jq-gne"/>
-                            <constraint firstItem="rfi-7i-kqP" firstAttribute="width" secondItem="exa-3b-Hng" secondAttribute="width" id="7h2-Xd-JrB"/>
-                            <constraint firstAttribute="centerX" secondItem="pmQ-Yc-ajE" secondAttribute="centerX" id="9Vg-9Z-LcD"/>
-                            <constraint firstAttribute="centerX" secondItem="csP-Mz-Hhu" secondAttribute="centerX" id="AED-nO-Dzl"/>
-                            <constraint firstItem="Ric-Gs-MMP" firstAttribute="top" secondItem="csP-Mz-Hhu" secondAttribute="bottom" constant="-27" id="E3B-au-aFq"/>
-                            <constraint firstAttribute="centerX" secondItem="rfi-7i-kqP" secondAttribute="centerX" id="HX7-Qa-ejm"/>
-                            <constraint firstItem="rfi-7i-kqP" firstAttribute="top" secondItem="pmQ-Yc-ajE" secondAttribute="bottom" constant="20" id="LaW-aW-dbL"/>
-                            <constraint firstItem="ksY-pe-LyN" firstAttribute="top" secondItem="pmQ-Yc-ajE" secondAttribute="bottom" constant="-27" id="MCz-MJ-NFd"/>
-                            <constraint firstItem="rfi-7i-kqP" firstAttribute="leading" secondItem="exa-3b-Hng" secondAttribute="trailing" constant="-240" id="RqO-ff-Aft"/>
-                            <constraint firstItem="ksY-pe-LyN" firstAttribute="width" secondItem="pmQ-Yc-ajE" secondAttribute="width" id="VfS-so-enx"/>
-                            <constraint firstItem="csP-Mz-Hhu" firstAttribute="leading" secondItem="Ric-Gs-MMP" secondAttribute="trailing" constant="-240" id="fDB-2f-aif"/>
-                            <constraint firstItem="ksY-pe-LyN" firstAttribute="leading" secondItem="pmQ-Yc-ajE" secondAttribute="trailing" constant="-240" id="kTh-Mn-EQv"/>
-                            <constraint firstItem="exa-3b-Hng" firstAttribute="top" secondItem="rfi-7i-kqP" secondAttribute="bottom" constant="-27" id="l3q-wh-eCE"/>
-                            <constraint firstItem="csP-Mz-Hhu" firstAttribute="top" secondItem="Yfo-UO-n2p" secondAttribute="bottom" constant="8" id="vD0-cE-FMl"/>
-                            <constraint firstItem="pmQ-Yc-ajE" firstAttribute="top" secondItem="csP-Mz-Hhu" secondAttribute="bottom" constant="20" id="wO0-yq-fP3"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Demo Webcams" id="fdT-19-XWT"/>
-                    <connections>
-                        <outlet property="firstWebViewer" destination="csP-Mz-Hhu" id="wAE-4x-gQT"/>
-                        <outlet property="secondWebViewer" destination="pmQ-Yc-ajE" id="WAB-CE-g2h"/>
-                        <outlet property="thirdWebViewer" destination="rfi-7i-kqP" id="SZs-qJ-ce6"/>
-                        <segue destination="rsU-11-oYM" kind="push" identifier="loadFullScreen" id="7g6-Nb-eS9"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QBJ-vW-xRQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="704" y="105"/>
-        </scene>
         <!--Demo webcams-->
         <scene sceneID="mgG-Jg-0Pp">
             <objects>
@@ -125,7 +27,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="40K-vJ-ykr" userLabel="StreamImage">
+                                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="40K-vJ-ykr" userLabel="StreamImage">
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
                                             <color key="backgroundColor" red="0.33333333333333331" green="0.32941176470588235" blue="0.396078431372549" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                                         </imageView>
@@ -165,12 +67,15 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Demo webcams" id="OTo-iO-U6Q"/>
+                    <connections>
+                        <segue destination="rsU-11-oYM" kind="push" identifier="loadFullScreen" id="PxA-p3-Nxe"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KdE-M5-zBB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="704" y="807"/>
+            <point key="canvasLocation" x="735" y="807"/>
         </scene>
-        <!--Full Screen View Controller-->
+        <!--Title-->
         <scene sceneID="ZuR-d9-xsW">
             <objects>
                 <viewController id="rsU-11-oYM" customClass="FullScreenViewController" customModule="Streamy" customModuleProvider="target" sceneMemberID="viewController">
@@ -194,33 +99,14 @@
                             <constraint firstItem="adr-Nf-ldt" firstAttribute="leading" secondItem="wgJ-wh-Ctk" secondAttribute="leadingMargin" id="MK1-mQ-dTS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="uGR-By-Y4k"/>
+                    <navigationItem key="navigationItem" title="Title" id="6mU-wH-upW"/>
                     <connections>
                         <outlet property="fullScreenImage" destination="adr-Nf-ldt" id="TSe-gE-Wyg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="An7-CZ-a3e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1184" y="579"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="MWP-o8-HFI">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dHs-tJ-xkL" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PJN-x4-BLp">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="aIt-l1-0TO" kind="relationship" relationship="rootViewController" id="oRb-it-wU4"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rvL-1V-kEV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="298" y="113"/>
+            <point key="canvasLocation" x="1180" y="807"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5gM-KE-jKq">
@@ -248,5 +134,5 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <color key="tintColor" red="0.1362564743083077" green="0.094128110817967806" blue="0.48127761994949492" alpha="1" colorSpace="calibratedRGB"/>
+    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

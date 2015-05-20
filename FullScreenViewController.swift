@@ -29,6 +29,12 @@ class FullScreenViewController: UIViewController {
     }
     
     
+    override func viewWillDisappear(animated: Bool) {
+        if (self.isMovingFromParentViewController()) {
+            newStream.videoDataTask.cancel()
+        }
+    }
+    
     func updateImage () {
         fullScreenImage.image = newStream.streamImageViewer.image
     }
