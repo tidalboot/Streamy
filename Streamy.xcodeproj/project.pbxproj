@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FC18EFD91B0B96C300C3AD5A /* StreamHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC18EFD81B0B96C300C3AD5A /* StreamHandler.swift */; };
+		FC2745FA1B0CBD84005D9501 /* TimerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2745F91B0CBD84005D9501 /* TimerHandler.swift */; };
 		FC8429251B0A139800A24668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8429241B0A139800A24668 /* AppDelegate.swift */; };
 		FC8429271B0A139800A24668 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8429261B0A139800A24668 /* ViewController.swift */; };
 		FC84292A1B0A139800A24668 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8429281B0A139800A24668 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		FC18EFD81B0B96C300C3AD5A /* StreamHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StreamHandler.swift; path = ../StreamHandler.swift; sourceTree = "<group>"; };
+		FC2745F91B0CBD84005D9501 /* TimerHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerHandler.swift; sourceTree = "<group>"; };
 		FC84291F1B0A139800A24668 /* Streamy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Streamy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC8429231B0A139800A24668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC8429241B0A139800A24668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC2745F81B0CBD79005D9501 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				FC18EFD81B0B96C300C3AD5A /* StreamHandler.swift */,
+				FC2745F91B0CBD84005D9501 /* TimerHandler.swift */,
+			);
+			name = Handlers;
+			sourceTree = "<group>";
+		};
 		FC8429161B0A139800A24668 = {
 			isa = PBXGroup;
 			children = (
@@ -77,7 +88,7 @@
 		FC8429211B0A139800A24668 /* VideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				FC18EFD81B0B96C300C3AD5A /* StreamHandler.swift */,
+				FC2745F81B0CBD79005D9501 /* Handlers */,
 				FC8429241B0A139800A24668 /* AppDelegate.swift */,
 				FC8429261B0A139800A24668 /* ViewController.swift */,
 				FC8429281B0A139800A24668 /* Main.storyboard */,
@@ -211,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC2745FA1B0CBD84005D9501 /* TimerHandler.swift in Sources */,
 				FC8429271B0A139800A24668 /* ViewController.swift in Sources */,
 				FC8429251B0A139800A24668 /* AppDelegate.swift in Sources */,
 				FC18EFD91B0B96C300C3AD5A /* StreamHandler.swift in Sources */,

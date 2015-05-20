@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class StreamHandler: UIView,  NSURLSessionDataDelegate {
+class Stream: UIView,  NSURLSessionDataDelegate {
 
     let dataMarker: NSData = NSData(bytes: [0xFF, 0xD9] as [UInt8], length: 2)
     var streamPath: String!
