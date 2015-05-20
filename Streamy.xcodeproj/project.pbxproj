@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FC18EFD91B0B96C300C3AD5A /* StreamHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC18EFD81B0B96C300C3AD5A /* StreamHandler.swift */; };
+		FC18EFD91B0B96C300C3AD5A /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC18EFD81B0B96C300C3AD5A /* Stream.swift */; };
 		FC2745FA1B0CBD84005D9501 /* TimerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2745F91B0CBD84005D9501 /* TimerHandler.swift */; };
 		FC2745FC1B0CC22C005D9501 /* FullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2745FB1B0CC22C005D9501 /* FullScreenViewController.swift */; };
 		FC8429251B0A139800A24668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8429241B0A139800A24668 /* AppDelegate.swift */; };
@@ -30,7 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FC18EFD81B0B96C300C3AD5A /* StreamHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StreamHandler.swift; path = ../StreamHandler.swift; sourceTree = "<group>"; };
+		FC18EFD81B0B96C300C3AD5A /* Stream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = ../Stream.swift; sourceTree = "<group>"; };
 		FC2745F91B0CBD84005D9501 /* TimerHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerHandler.swift; sourceTree = "<group>"; };
 		FC2745FB1B0CC22C005D9501 /* FullScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FullScreenViewController.swift; path = ../FullScreenViewController.swift; sourceTree = "<group>"; };
 		FC84291F1B0A139800A24668 /* Streamy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Streamy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,7 +67,7 @@
 		FC2745F81B0CBD79005D9501 /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
-				FC18EFD81B0B96C300C3AD5A /* StreamHandler.swift */,
+				FC18EFD81B0B96C300C3AD5A /* Stream.swift */,
 				FC2745F91B0CBD84005D9501 /* TimerHandler.swift */,
 				FCD5E7651B0CD4AE005FDA15 /* ImageHandler.swift */,
 			);
@@ -237,7 +237,7 @@
 				FCD5E7681B0CDBFD005FDA15 /* StreamViewerCell.swift in Sources */,
 				FC8429251B0A139800A24668 /* AppDelegate.swift in Sources */,
 				FCD5E7661B0CD4AE005FDA15 /* ImageHandler.swift in Sources */,
-				FC18EFD91B0B96C300C3AD5A /* StreamHandler.swift in Sources */,
+				FC18EFD91B0B96C300C3AD5A /* Stream.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

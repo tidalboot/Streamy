@@ -17,6 +17,8 @@ class ViewController: UICollectionViewController {
     var firstStream = Stream()
     var secondStream = Stream()
     var thirdStream = Stream()
+    var fourthStream = Stream()
+    var fifthStream = Stream()
     
     
     override func supportedInterfaceOrientations() -> Int {
@@ -28,17 +30,31 @@ class ViewController: UICollectionViewController {
         var tapRecogniser = UITapGestureRecognizer(target: self, action: "runSegue")
 //        firstWebViewer.addGestureRecognizer(tapRecogniser)
         
-        firstStream.streamPath = "http://213.221.150.136/mjpg/video.mjpg"
-        secondStream.streamPath = "http://plazacam.studentaffairs.duke.edu/mjpg/video.mjpg"
-        thirdStream.streamPath = "http://trackfield.webcam.oregonstate.edu/mjpg/video.mjpg"
         
-        streamArray = [firstStream, secondStream, thirdStream]
+        
+        firstStream.streamPath = "http://213.221.150.136/mjpg/video.mjpg"
+        firstStream.streamName = "Switzerland"
+        secondStream.streamPath = "http://plazacam.studentaffairs.duke.edu/mjpg/video.mjpg"
+        secondStream.streamName = "Duke University"
+        thirdStream.streamPath = "http://trackfield.webcam.oregonstate.edu/mjpg/video.mjpg"
+        thirdStream.streamName = "Oregon State"
+        fourthStream.streamPath = "http://128.8.230.14/mjpg/video.mjpg"
+        fourthStream.streamName = "Maryland food halls"
+        
+        fifthStream.streamPath = "http://129.186.176.245/mjpg/video.mjpg"
+        fifthStream.streamName = "Iowa State Green"
+        
+        streamArray = [firstStream, secondStream, thirdStream, fourthStream, fifthStream]
     
         for stream in streamArray {
             stream.getVideoStream()
         }
         var updateTimer = timerHandler.functionAfterInteval(0.01, classOfFunction: self, functionToRun: "updateImage")
         var probeConnectionTimer = timerHandler.functionAfterInteval(1, classOfFunction: self, functionToRun: "connectionStateCheck")
+    }
+    
+    func updateImage () {
+        self.collectionView?.reloadData()
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -49,20 +65,16 @@ class ViewController: UICollectionViewController {
     }
     
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 1
-    }
+        return 1}
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return streamArray.count
-    }
+        return streamArray.count}
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let streamCell = collectionView.dequeueReusableCellWithReuseIdentifier("streamViewerCell", forIndexPath: indexPath) as! StreamViewerCell
         
-        var currentStream: Stream = streamArray[indexPath.item]
-        var currentImage = currentStream.streamImageViewer.image
-        
-        streamCell.streamImageView.image = currentImage
+        streamCell.streamImageView.image = streamArray[indexPath.item].streamImageViewer.image
+        streamCell.streamNameLabel.text = streamArray[indexPath.item].streamName
         
         return streamCell
     }
@@ -72,10 +84,6 @@ class ViewController: UICollectionViewController {
         performSegueWithIdentifier("loadFullScreen", sender: self)
     }
     
-    
-    func updateImage () {
-        self.collectionView?.reloadData()
-    }
     
     func connectionStateCheck () {
         for stream in streamArray {

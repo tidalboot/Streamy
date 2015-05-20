@@ -13,6 +13,7 @@ class Stream: UIView,  NSURLSessionDataDelegate {
 
     let dataMarker: NSData = NSData(bytes: [0xFF, 0xD9] as [UInt8], length: 2)
     var streamPath: String!
+    var streamName: String!
     var recievedData: NSMutableData = NSMutableData()
     var videoDataTask: NSURLSessionDataTask!
     var streamImageViewer = UIImageView()

@@ -103,35 +103,36 @@
             </objects>
             <point key="canvasLocation" x="704" y="105"/>
         </scene>
-        <!--View Controller-->
+        <!--Demo webcams-->
         <scene sceneID="mgG-Jg-0Pp">
             <objects>
                 <collectionViewController id="6MP-n4-dno" customClass="ViewController" customModule="Streamy" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="siX-5f-Nb6">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nJe-n6-pNk">
-                            <size key="itemSize" width="250" height="150"/>
+                            <size key="itemSize" width="300" height="200"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="streamViewerCell" id="izl-Iv-tj9" customClass="StreamViewerCell" customModule="Streamy" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="250" height="150"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="40K-vJ-ykr">
-                                            <rect key="frame" x="0.0" y="0.0" width="250" height="150"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="40K-vJ-ykr" userLabel="StreamImage">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                                            <color key="backgroundColor" red="0.33333333333333331" green="0.32941176470588235" blue="0.396078431372549" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                                         </imageView>
-                                        <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Oregon State College" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2n-Hx-JkR">
-                                            <rect key="frame" x="1" y="123" width="249" height="27"/>
-                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.57999999999999996" colorSpace="calibratedRGB"/>
+                                        <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2n-Hx-JkR" userLabel="StreamName">
+                                            <rect key="frame" x="0.0" y="173" width="300" height="27"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69000000000000006" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="249" id="8v2-e5-hxk"/>
                                                 <constraint firstAttribute="height" constant="27" id="jwP-f9-OOz"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
@@ -142,11 +143,19 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
-                                    <constraint firstAttribute="centerX" secondItem="o2n-Hx-JkR" secondAttribute="centerX" constant="-0.5" id="WRr-sh-4RT"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="o2n-Hx-JkR" secondAttribute="bottom" constant="-8" id="XAd-yh-Plr"/>
+                                    <constraint firstAttribute="centerX" secondItem="40K-vJ-ykr" secondAttribute="centerX" id="1oW-PH-QkN"/>
+                                    <constraint firstItem="40K-vJ-ykr" firstAttribute="top" secondItem="izl-Iv-tj9" secondAttribute="top" id="Ftc-9r-oYk"/>
+                                    <constraint firstAttribute="trailing" secondItem="40K-vJ-ykr" secondAttribute="trailing" id="KKM-M6-PD6"/>
+                                    <constraint firstAttribute="centerY" secondItem="40K-vJ-ykr" secondAttribute="centerY" id="Kwd-By-x9e"/>
+                                    <constraint firstAttribute="bottom" secondItem="40K-vJ-ykr" secondAttribute="bottom" id="V3i-C7-IwY"/>
+                                    <constraint firstItem="o2n-Hx-JkR" firstAttribute="top" secondItem="40K-vJ-ykr" secondAttribute="bottom" constant="-27" id="W5r-6C-pES"/>
+                                    <constraint firstAttribute="centerX" secondItem="o2n-Hx-JkR" secondAttribute="centerX" id="WRr-sh-4RT"/>
+                                    <constraint firstItem="40K-vJ-ykr" firstAttribute="leading" secondItem="izl-Iv-tj9" secondAttribute="leading" id="agR-Ev-eAa"/>
+                                    <constraint firstItem="40K-vJ-ykr" firstAttribute="width" secondItem="o2n-Hx-JkR" secondAttribute="width" id="nOG-F9-vO8"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="streamImageView" destination="40K-vJ-ykr" id="puD-75-I7A"/>
+                                    <outlet property="streamNameLabel" destination="o2n-Hx-JkR" id="jc5-sF-Oei"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -155,7 +164,7 @@
                             <outlet property="delegate" destination="6MP-n4-dno" id="L23-nE-pHb"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="OTo-iO-U6Q"/>
+                    <navigationItem key="navigationItem" title="Demo webcams" id="OTo-iO-U6Q"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KdE-M5-zBB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -218,7 +227,9 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nsd-4I-GYD" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Emr-0S-JPt">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="Emr-0S-JPt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

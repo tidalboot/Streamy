@@ -12,5 +12,6 @@ import UIKit
 class StreamViewerCell: UICollectionViewCell {
     
     @IBOutlet var streamImageView: UIImageView!
+    @IBOutlet var streamNameLabel: UILabel!
     
 }
