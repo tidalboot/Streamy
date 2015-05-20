@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7519.1" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="aIt-l1-0TO">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7513.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ml2-jQ-wLW">
+            <objects>
+                <viewController id="aIt-l1-0TO" customClass="ViewController" customModule="Streamy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yfo-UO-n2p"/>
+                        <viewControllerLayoutGuide type="bottom" id="A2u-dt-gLr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GeQ-6X-Dw6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="csP-Mz-Hhu">
+                                <rect key="frame" x="40" y="20" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="AXN-JA-QLx"/>
+                                    <constraint firstAttribute="width" constant="240" id="cMj-BT-gcb"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pmQ-Yc-ajE">
+                                <rect key="frame" x="40" y="220" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="uM3-dN-CGY"/>
+                                    <constraint firstAttribute="width" constant="240" id="xpv-Ls-IlE"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rfi-7i-kqP">
+                                <rect key="frame" x="40" y="420" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="hqo-aS-a4l"/>
+                                    <constraint firstAttribute="height" constant="128" id="kxE-Xz-FYW"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="pmQ-Yc-ajE" secondAttribute="centerY" id="4IS-Gv-qKK"/>
+                            <constraint firstAttribute="centerX" secondItem="pmQ-Yc-ajE" secondAttribute="centerX" id="9Vg-9Z-LcD"/>
+                            <constraint firstItem="pmQ-Yc-ajE" firstAttribute="top" secondItem="csP-Mz-Hhu" secondAttribute="bottom" constant="72" id="AqT-5B-hAl"/>
+                            <constraint firstAttribute="centerX" secondItem="rfi-7i-kqP" secondAttribute="centerX" id="HX7-Qa-ejm"/>
+                            <constraint firstItem="rfi-7i-kqP" firstAttribute="top" secondItem="pmQ-Yc-ajE" secondAttribute="bottom" constant="72" id="LaW-aW-dbL"/>
+                            <constraint firstAttribute="centerX" secondItem="csP-Mz-Hhu" secondAttribute="centerX" id="bOI-KV-fYt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstWebViewer" destination="csP-Mz-Hhu" id="wAE-4x-gQT"/>
+                        <outlet property="secondWebViewer" destination="pmQ-Yc-ajE" id="WAB-CE-g2h"/>
+                        <outlet property="thirdWebViewer" destination="rfi-7i-kqP" id="SZs-qJ-ce6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QBJ-vW-xRQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="186" y="299"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

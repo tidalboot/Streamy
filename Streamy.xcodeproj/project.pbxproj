@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC18EFD91B0B96C300C3AD5A /* StreamHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC18EFD81B0B96C300C3AD5A /* StreamHandler.swift */; };
+		FC8429251B0A139800A24668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8429241B0A139800A24668 /* AppDelegate.swift */; };
+		FC8429271B0A139800A24668 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8429261B0A139800A24668 /* ViewController.swift */; };
+		FC84292A1B0A139800A24668 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8429281B0A139800A24668 /* Main.storyboard */; };
+		FC84292C1B0A139800A24668 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC84292B1B0A139800A24668 /* Images.xcassets */; };
+		FC84293B1B0A139800A24668 /* VideoPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC84293A1B0A139800A24668 /* VideoPlayerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC8429351B0A139800A24668 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC8429171B0A139800A24668 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC84291E1B0A139800A24668;
+			remoteInfo = VideoPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC18EFD81B0B96C300C3AD5A /* StreamHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StreamHandler.swift; path = ../StreamHandler.swift; sourceTree = "<group>"; };
+		FC84291F1B0A139800A24668 /* Streamy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Streamy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC8429231B0A139800A24668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC8429241B0A139800A24668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FC8429261B0A139800A24668 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FC8429291B0A139800A24668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC84292B1B0A139800A24668 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FC8429341B0A139800A24668 /* StreamyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreamyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC8429391B0A139800A24668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC84293A1B0A139800A24668 /* VideoPlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC84291C1B0A139800A24668 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC8429311B0A139800A24668 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC8429161B0A139800A24668 = {
+			isa = PBXGroup;
+			children = (
+				FC8429211B0A139800A24668 /* VideoPlayer */,
+				FC8429371B0A139800A24668 /* VideoPlayerTests */,
+				FC8429201B0A139800A24668 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC8429201B0A139800A24668 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC84291F1B0A139800A24668 /* Streamy.app */,
+				FC8429341B0A139800A24668 /* StreamyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC8429211B0A139800A24668 /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				FC18EFD81B0B96C300C3AD5A /* StreamHandler.swift */,
+				FC8429241B0A139800A24668 /* AppDelegate.swift */,
+				FC8429261B0A139800A24668 /* ViewController.swift */,
+				FC8429281B0A139800A24668 /* Main.storyboard */,
+				FC84292B1B0A139800A24668 /* Images.xcassets */,
+				FC8429221B0A139800A24668 /* Supporting Files */,
+			);
+			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
+		FC8429221B0A139800A24668 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC8429231B0A139800A24668 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC8429371B0A139800A24668 /* VideoPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC84293A1B0A139800A24668 /* VideoPlayerTests.swift */,
+				FC8429381B0A139800A24668 /* Supporting Files */,
+			);
+			path = VideoPlayerTests;
+			sourceTree = "<group>";
+		};
+		FC8429381B0A139800A24668 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC8429391B0A139800A24668 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC84291E1B0A139800A24668 /* Streamy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC84293E1B0A139800A24668 /* Build configuration list for PBXNativeTarget "Streamy" */;
+			buildPhases = (
+				FC84291B1B0A139800A24668 /* Sources */,
+				FC84291C1B0A139800A24668 /* Frameworks */,
+				FC84291D1B0A139800A24668 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Streamy;
+			productName = VideoPlayer;
+			productReference = FC84291F1B0A139800A24668 /* Streamy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC8429331B0A139800A24668 /* StreamyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC8429411B0A139800A24668 /* Build configuration list for PBXNativeTarget "StreamyTests" */;
+			buildPhases = (
+				FC8429301B0A139800A24668 /* Sources */,
+				FC8429311B0A139800A24668 /* Frameworks */,
+				FC8429321B0A139800A24668 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC8429361B0A139800A24668 /* PBXTargetDependency */,
+			);
+			name = StreamyTests;
+			productName = VideoPlayerTests;
+			productReference = FC8429341B0A139800A24668 /* StreamyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC8429171B0A139800A24668 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Nick Jones";
+				TargetAttributes = {
+					FC84291E1B0A139800A24668 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					FC8429331B0A139800A24668 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = FC84291E1B0A139800A24668;
+					};
+				};
+			};
+			buildConfigurationList = FC84291A1B0A139800A24668 /* Build configuration list for PBXProject "Streamy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC8429161B0A139800A24668;
+			productRefGroup = FC8429201B0A139800A24668 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC84291E1B0A139800A24668 /* Streamy */,
+				FC8429331B0A139800A24668 /* StreamyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC84291D1B0A139800A24668 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC84292A1B0A139800A24668 /* Main.storyboard in Resources */,
+				FC84292C1B0A139800A24668 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC8429321B0A139800A24668 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC84291B1B0A139800A24668 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC8429271B0A139800A24668 /* ViewController.swift in Sources */,
+				FC8429251B0A139800A24668 /* AppDelegate.swift in Sources */,
+				FC18EFD91B0B96C300C3AD5A /* StreamHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC8429301B0A139800A24668 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC84293B1B0A139800A24668 /* VideoPlayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC8429361B0A139800A24668 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC84291E1B0A139800A24668 /* Streamy */;
+			targetProxy = FC8429351B0A139800A24668 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC8429281B0A139800A24668 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC8429291B0A139800A24668 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC84293C1B0A139800A24668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC84293D1B0A139800A24668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC84293F1B0A139800A24668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VideoPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = Streamy;
+			};
+			name = Debug;
+		};
+		FC8429401B0A139800A24668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VideoPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = Streamy;
+			};
+			name = Release;
+		};
+		FC8429421B0A139800A24668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VideoPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = StreamyTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoPlayer.app/VideoPlayer";
+			};
+			name = Debug;
+		};
+		FC8429431B0A139800A24668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VideoPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = StreamyTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoPlayer.app/VideoPlayer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC84291A1B0A139800A24668 /* Build configuration list for PBXProject "Streamy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC84293C1B0A139800A24668 /* Debug */,
+				FC84293D1B0A139800A24668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC84293E1B0A139800A24668 /* Build configuration list for PBXNativeTarget "Streamy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC84293F1B0A139800A24668 /* Debug */,
+				FC8429401B0A139800A24668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC8429411B0A139800A24668 /* Build configuration list for PBXNativeTarget "StreamyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC8429421B0A139800A24668 /* Debug */,
+				FC8429431B0A139800A24668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC8429171B0A139800A24668 /* Project object */;
+}
