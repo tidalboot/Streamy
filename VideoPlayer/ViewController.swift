@@ -21,17 +21,15 @@ class ViewController: UICollectionViewController {
     var fourthStream = Stream()
     var fifthStream = Stream()
     
-//    var tapRecogniser: UITapGestureRecognizer!
+    override func shouldAutorotate() -> Bool {
+        return false
+    }
     
     override func supportedInterfaceOrientations() -> Int {
         return Int(UIInterfaceOrientationMask.Portrait.rawValue)
     }
     
     override func viewDidLoad() {
-        
-//        firstWebViewer.addGestureRecognizer(tapRecogniser)
-        
-        
         firstStream.streamPath = "http://213.221.150.136/mjpg/video.mjpg"
         firstStream.streamName = "Switzerland"
         secondStream.streamPath = "http://plazacam.studentaffairs.duke.edu/mjpg/video.mjpg"
@@ -40,7 +38,6 @@ class ViewController: UICollectionViewController {
         thirdStream.streamName = "Oregon State"
         fourthStream.streamPath = "http://128.8.230.14/mjpg/video.mjpg"
         fourthStream.streamName = "Maryland food halls"
-        
         fifthStream.streamPath = "http://129.186.176.245/mjpg/video.mjpg"
         fifthStream.streamName = "Iowa State Green"
         
@@ -49,6 +46,7 @@ class ViewController: UICollectionViewController {
         for stream in streamArray {
             stream.getVideoStream()
         }
+        
         var updateTimer = timerHandler.functionAfterInteval(0.01, classOfFunction: self, functionToRun: "updateImage")
         var probeConnectionTimer = timerHandler.functionAfterInteval(1, classOfFunction: self, functionToRun: "connectionStateCheck")
     }
@@ -73,11 +71,6 @@ class ViewController: UICollectionViewController {
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let streamCell = collectionView.dequeueReusableCellWithReuseIdentifier("streamViewerCell", forIndexPath: indexPath) as! StreamViewerCell
-        
-        
-//        var tapRecogniser = UITapGestureRecognizer(target: self, action: "runSegue")
-//        streamCell.addGestureRecognizer(tapRecogniser)
-        
 
         streamCell.streamImageView.image = streamArray[indexPath.item].streamImageViewer.image
         streamCell.streamNameLabel.text = streamArray[indexPath.item].streamName

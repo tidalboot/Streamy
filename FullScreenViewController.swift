@@ -12,31 +12,40 @@ class FullScreenViewController: UIViewController {
 
     var timerHandler = TimerHandler()
     var receivedStream: Stream!
-    
-    var newStream: Stream!
+    var fullScreenStream: Stream!
     
     @IBOutlet var fullScreenImage: UIImageView!
+    @IBOutlet var fullScreenStreamTitle: UINavigationItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        newStream = Stream()
-        newStream.streamPath = receivedStream.streamPath
+        fullScreenStream = Stream()
+        fullScreenStream.streamPath = receivedStream.streamPath
+        fullScreenStream.streamName = receivedStream.streamName
         
-        newStream.getVideoStream()
+        fullScreenStream.getVideoStream()
         
         timerHandler.functionAfterInteval(0.01, classOfFunction: self, functionToRun: "updateImage")
+        fullScreenStreamTitle.title = fullScreenStream.streamName
     }
     
+    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        if UIDevice.currentDevice().orientation.isLandscape.boolValue {
+            self.navigationController?.navigationBarHidden = true
+            return
+        }
+        self.navigationController?.navigationBarHidden = false
+    }
     
     override func viewWillDisappear(animated: Bool) {
         if (self.isMovingFromParentViewController()) {
-            newStream.videoDataTask.cancel()
+            fullScreenStream.videoDataTask.cancel()
         }
     }
     
     func updateImage () {
-        fullScreenImage.image = newStream.streamImageViewer.image
+        fullScreenImage.image = fullScreenStream.streamImageViewer.image
     }
 
 

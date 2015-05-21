@@ -102,6 +102,7 @@
                     <navigationItem key="navigationItem" title="Title" id="6mU-wH-upW"/>
                     <connections>
                         <outlet property="fullScreenImage" destination="adr-Nf-ldt" id="TSe-gE-Wyg"/>
+                        <outlet property="fullScreenStreamTitle" destination="6mU-wH-upW" id="Nd5-bO-1Xu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="An7-CZ-a3e" userLabel="First Responder" sceneMemberID="firstResponder"/>
